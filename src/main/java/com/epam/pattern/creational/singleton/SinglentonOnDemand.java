@@ -1,6 +1,6 @@
 package com.epam.pattern.creational.singleton;
 
-public class SinglentonOnDemand {
+public final class SinglentonOnDemand {
     private SinglentonOnDemand() {
     }
 
@@ -10,5 +10,9 @@ public class SinglentonOnDemand {
 
     public static SinglentonOnDemand getInstance() {
         return SingletonHolder.INSTANCE;
+    }
+
+    public void printHello(){
+        System.out.println("Hello!");
     }
 }
